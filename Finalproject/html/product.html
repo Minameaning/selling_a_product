@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Clocky_Final project" />
+    <meta name="author" content=" Saipetch Damrongvongsawang" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="Stylesheet" href="../css/style.css" />
+    <link rel="icon" type="image/x-icon" href="../images/clock.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <title>Clocky-alarm clock</title>
+  </head>
+  <body>
+    <header>
+      <nav id="navigation" class="nav">
+        <input type="checkbox" id="nav-check" />
+        <div class="nav-header">
+          <div class="nav-title">
+            <p class="logo-name"><a href="index.html">
+              Cl<span
+                ><img
+                  class="clock-logo"
+                  src="../images/alarm-clock.png"
+                  alt="clock's logo" /></span
+              >cky
+            </a></p>
+          </div>
+        </div>
+        <div class="nav-btn">
+          <label for="nav-check">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        </div>
+
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="product.html">Product</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+<main>
+  <div class="countdown-box">
+    <div class="countdown">Sale ends in </div>
+    <div class="countdown"><span id="days"> </span> days</div>
+    <div class="countdown"><span id="hours"></span> hours</div>
+    <div class="countdown"><span id="minutes"></span> minutes</div>
+    <div class="countdown"><span id="seconds"></span> seconds</div>
+  </div>
+        <section class="product-images-container">
+            <div class="product-box">
+                <div class="product-image-display">
+                    <div class="carousel">
+                        <div id="carouselImages" class="carousel-images">
+                            <img id="pic" src="../images/clock-white.png" alt="White">
+                        </div>
+                        <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+                        <button class="next" onclick="changeSlide(1)">&#10095;</button>
+                    </div>
+                </div>
+                <div class="product-color-list">
+                    <p class="colorName">Color </p>
+                    <br>
+                    <button id="btn-white" class="button-color" onclick="changeColor('white','White')">
+                    </button>
+                    <button id="btn-black" class="button-color" onclick="changeColor('black','Black')">
+                    </button>
+                    <button id="btn-pink" class="button-color" onclick="changeColor('pink','Pink')">
+                    </button>
+                    <button id="btn-aqua" class="button-color" onclick="changeColor('aqua','Aqua')">
+                    </button>
+                    <button id="btn-navy" class="button-color" onclick="changeColor('navy','Navy')">
+                    </button>
+                    <button id="btn-silver" class="button-color" onclick="changeColor('silver','Silver')">
+                    </button>
+                    <button id="btn-gold" class="button-color" onclick="changeColor('gold', 'Gold')">
+                    </button>
+                   
+                </div>
+            </div>
+    
+      </div>
+        <div class="product-detail">
+            <div class="product-description-wrapper">
+                <h3>Clocky</h3>
+                <h4>The Runaway Alarm Clock</h4>
+                <h5>Sale!!!</h5>
+                <h2>$56</h2>
+                          <div class="product-description">
+                            <p>Clocky is the alarm clock that runs away beeping, to get you out of bed. Most people 'abuse' the snooze every morning. Clocky never lets you oversleep again. If you snooze, Clocky will jump off of your nightstand, and run away beeping, absolutely determined to get you out of bed on time.</p><br>
+                <ul>
+                <li><span>Runs away beeping on carpet or wood</span></li>
+                <li><span>Durable! Jumps from 3 feet high</span></li>
+                <li><span>Loud R2D2-like robotic sound</span></li>
+                <li><span >Option to snooze once or disable snooze</span></li>
+                <li><span>Option to turn off wheels / roll away feature</span></li>
+                </ul>
+                <strong>Free Returns</strong><br><br><br>
+                  <a class="buy-button" href="https://a.co/d/d0OfadQ" target="_blank">Buy on Amazon</a>
+
+                
+                          </div>
+                        </div>
+          
+                    </div>
+    </div>
+
+
+        
+    </section>
+
+    <section class="product-description-info">
+        <div class="description-box">
+            <img class="description-image-left" src="../images/clock-back.png" alt="">
+        <div class="description-text-box">
+        <h3>One-Time Snooze</h3>
+        <p>
+            Clocky prevents drowsiness by waking you up fast</p></div>
+        </div>
+            <div class="description-box">
+        
+        <div class="description-text-box">
+            <h3>Runs Away</h3>
+            <p>
+                He jumps and runs so you have to get up to turn him off</p>
+            </div>
+        
+            <img class="description-image-right" src="../images/clock-right.png" alt=""></div>
+
+
+        <div class="description-box">
+        <img class="description-image-left" src="../images/clock-left.png" alt="">
+        <div class="description-text-box">
+            <h3>Super Loud</h3>
+        <p>
+            Clocky was made for heavy sleepers</p>
+        </div>
+        </div>
+        <div class="line"></div>
+    </section>
+    <!-- reviews -->
+    <section class="product-review">
+      <div class="testimonial-heading">
+        <h2>Reviews</h2>
+        <div class="review-heading-container">
+        <div class="review-heading-wrapper">
+        <span class="review-heading">User Rating</span>
+        <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+        <p>4.1 average based on 254 reviews.</p>
+        
+    </div>
+        <div class="review-row">
+            <div class="review-row-wrapper">
+          <div class="side">
+            <div>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+        </div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-5 bar-color"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>150</div>
+          </div>
+        </div>
+        <div class="review-row-wrapper">
+          <div class="side">
+            <div>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-4 bar-color"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>63</div>
+        </div>
+          </div>
+          <div class="review-row-wrapper">
+          <div class="side">
+            <div>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-3 bar-color"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>15</div>
+          </div>
+        </div>
+        <div class="review-row-wrapper">
+          <div class="side">
+            <div>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+                <i class="fa fa-star-o"></i>
+                <i class="fa fa-star-o"></i>
+            </div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-2 bar-color"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>20</div>
+          </div>
+          </div>
+        
+        <div class="review-row-wrapper">
+          <div class="side">
+            <div> <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+                <i class="fa fa-star-o"></i>
+                <i class="fa fa-star-o"></i>
+                <i class="fa fa-star-o"></i></div>
+          </div>
+          <div class="middle">
+            <div class="bar-container">
+              <div class="bar-1 bar-color"></div>
+            </div>
+          </div>
+          <div class="side right">
+            <div>6</div>
+          </div>
+          </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    
+      <!--testimonials-box-container------>
+      <div class="reviews">
+      
+      <div class="testimonial-box-container">
+        
+        <!--BOX-1-------------->
+        <div class="testimonial-box">
+        
+          <!--top------------------------->
+          <div class="box-top">
+            <!--profile----->
+            <div class="profile">
+              <!--img---->
+              <div class="profile-img">
+                <img
+                  src="../images/man1.png"
+                />
+              </div>
+              <!--name-and-username-->
+              <div class="name-user">
+                <strong>John Doe</strong>
+                <span>@Doe1994</span>
+              </div>
+            </div>
+            <div class="reviews">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+            </div>
+          </div>
+          <!--Comments---------------------------------------->
+          <div class="client-comment">
+            <h4>Amazing alarm clock</h4>
+            <p>
+                This is incredible effective for deep sleepers. it’s loud and almost gave my kid a heart attack the first night, but now he’s used to it. It’s definitely effective. We haven’t been late to school since.
+            </p>
+          </div>
+        </div>
+        <!--BOX-2-------------->
+        <div class="testimonial-box">
+          <!--top------------------------->
+          <div class="box-top">
+            <!--profile----->
+            <div class="profile">
+              <!--img---->
+              <div class="profile-img">
+                <img
+                  src="../images/man2.png"
+                />
+              </div>
+              <!--name-and-username-->
+              <div class="name-user">
+                <strong>Walt Disney</strong>
+                <span>@disney.w</span>
+              </div>
+            </div>
+            <!--reviews------>
+            <div class="reviews">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-half-empty"></i>
+            </div>
+          </div>
+          <!--Comments---------------------------------------->
+          <div class="client-comment">
+            <h4>Lol makes me get up out of bed!</h4>
+            <p>
+I put it in another room and trained my pups to freak out when it goes off! I love it! My neighbors more than likely hate it
+            </p>
+          </div>
+        </div>
+        <!--BOX-3-------------->
+        <div class="testimonial-box">
+          <!--top------------------------->
+          <div class="box-top">
+            <!--profile----->
+            <div class="profile">
+              <!--img---->
+              <div class="profile-img">
+                <img
+                  src="../images/woman1.png"
+                />
+              </div>
+              <!--name-and-username-->
+              <div class="name-user">
+                <strong>Jennifer Lawrence</strong>
+                <span>@Jennifer</span>
+              </div>
+            </div>
+            <!--reviews------>
+            <div class="reviews">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+          </div>
+          <!--Comments---------------------------------------->
+          <div class="client-comment">
+            <h4>Clocky is a miracle worker!</h4>
+            <p>
+                My 6 year old is IMPOSSIBLE to get out of bed. We were always late everywhere and it was becoming a big problem. A friend suggested getting her an alarm clock and I found Clocky! It seriously does the trick. She screams when it goes off and I have to go turn it off for her, but SHE GETS UP IMMEDIATELY!
+            </p>
+          </div>
+        </div>
+        <!--BOX-4-------------->
+        <div class="testimonial-box">
+          <!--top------------------------->
+          <div class="box-top">
+            <!--profile----->
+            <div class="profile">
+              <!--img---->
+              <div class="profile-img">
+                <img
+                  src="../images/woman2.png"
+                />
+              </div>
+              <!--name-and-username-->
+              <div class="name-user">
+                <strong>Taylor Swift</strong>
+                <span>@taylor.S</span>
+              </div>
+            </div>
+            <!--reviews------>
+            <div class="reviews">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-half-empty"></i>
+              <i class="fa fa-star-o"></i>
+            </div>
+          </div>
+          <!--Comments---------------------------------------->
+          <div class="client-comment">
+            <h4> annoying alarm clock for sure!</h4>
+            <p>
+                Makes me get out of bed in the morning, and that is what matters. It doesn’t work great on carpet, but since I have a stool to get into my bed, that isn’t an issue for me since I can’t reach it if I don’t get up anyway.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+</main>
+    <!-- footer -->
+    <footer>
+      <div class="row">
+        <div class="column">
+          <h4 class="footer-title"><i class="fa fa-home"></i> About Us</h4>
+          <p class="footer-info">
+            Struggle to wake up every morning? Clocky is guaranteed to get you
+            out of bed. He will leap from you
+          </p>
+        </div>
+        <div class="column">
+          <h4 class="footer-title">
+            <i class="fa fa-envelope"></i> Subscription
+          </h4>
+          <label for="email">Your E-mail:</label>
+          <br />
+          <input
+            class="email-box"
+            type="email"
+            id="email"
+            placeholder="Enter your E-mail..."
+          />
+          <button class="footer-button" type="submit" href="index.php">
+            Send
+          </button>
+        </div>
+        <div class="column">
+          <h4 class="footer-title">
+            <i class="fa fa-users"></i> Connect with Us
+          </h4>
+
+          <ul class="social-icons">
+            <li>
+              <a href="https://www.facebook.com/clockythealarm">
+                <i class="fa fa-facebook"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/clockyofficial/">
+                <i class="fa fa-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.pinterest.ca/clockythealarm/">
+                <i class="fa fa-pinterest"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com/@ClockyTheAlarm">
+                <i class="fa fa-youtube"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <p class="copyright">© 2023 |Saipetch D. All Rights Reserved</p>
+    </footer>
+    <script src="../javascript/script.js"></script>
+  </body>
+</html>
